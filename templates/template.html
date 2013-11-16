@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block titulo %}Forum{% endblock %}</title>
+
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css">
+</head>
+<body>
+
+  <h1>
+    <a href="/">Forum</a>
+  </h1>
+
+  <hr>
+
+  {% block conteudo %}{% endblock %}
+
+  {% include "rodape.html" %}
+</body>
+</html>
